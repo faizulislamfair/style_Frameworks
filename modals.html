@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Materialize CSS</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Modals</h2>
+
+        <a href="#terms" class="btn orange modal-trigger z-depth-2">Terms & Conditions</a>
+
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Penguin Pakhi Paka Pepe Khai</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit numquam consectetur veritatis ipsum dolorem aliquam voluptatum nulla explicabo harum, deserunt, vel corporis illum, est similique quidem architecto labore eos quisquam.
+                </p>
+            </div>
+            <div class="modal-factor">
+                <a href="#" style="margin-bottom: 10px; margin-right: 10px;" class="modal-close btn orange right">Akashe urbana?</a>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $('.modal').modal();
+        });
+    </script>
+</body>
+</html>
