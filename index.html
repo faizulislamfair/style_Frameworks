@@ -17,6 +17,10 @@
       background-position: center;
       min-height: 1000px;
     }
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
     @media screen and (max-width: 670px){
       header{
       min-height: 500px;
@@ -51,6 +55,35 @@
 
 
   <!-- photo / grid -->
+  <section class="container section" id="photos">
+    <div class="row">
+      <div class="col s12 l4">
+         <img src="img/portrait.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Portraits</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 push-l7 offset-l1">
+         <img src="img/city.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 pull-l5 right-align offset-l1">
+        <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+         <img src="img/nature.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Nature</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+    </div>
+  </section>
 
   <!-- parallax -->
 
@@ -68,6 +101,7 @@
   <script>
     $(document).ready(function(){
     $('.sidenav').sidenav();
+    $('.materialboxed').materialbox();
     });
   </script>
 </body>
