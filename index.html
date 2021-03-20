@@ -17,14 +17,20 @@
       background-position: center;
       min-height: 1000px;
     }
+    @media screen and (max-width: 670px){
+      header{
+        min-height: 500px;
+      }
+    }
     .section{
       padding-top: 4vw;
       padding-bottom: 4vw;
     }
-    @media screen and (max-width: 670px){
-      header{
-      min-height: 500px;
-      }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
     }
   </style>
 </head>
@@ -95,11 +101,37 @@
 
   <!-- services / tabs -->
 
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odio maiores, consequuntur enim debitis saepe nesciunt facere dolore recusandae numquam. Odit vel corporis officia aliquid, alias porro distinctio in ipsam!</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odio maiores, consequuntur enim debitis saepe nesciunt facere dolore recusandae numquam. Odit vel corporis officia aliquid, alias porro distinctio in ipsam!</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odio maiores, consequuntur enim debitis saepe nesciunt facere dolore recusandae numquam. Odit vel corporis officia aliquid, alias porro distinctio in ipsam!</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odio maiores, consequuntur enim debitis saepe nesciunt facere dolore recusandae numquam. Odit vel corporis officia aliquid, alias porro distinctio in ipsam!</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odio maiores, consequuntur enim debitis saepe nesciunt facere dolore recusandae numquam. Odit vel corporis officia aliquid, alias porro distinctio in ipsam!</p>
+  <section class="container section" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">
+          All I Know.....
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nesciunt accusamus ab.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nesciunt accusamus ab.</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photo" class="indigo-text text-darken-4">Photography</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+          </li>
+        </ul>
+        <div class="col s12" id="photo">
+          <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nesciunt accusamus ab.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nesciunt accusamus ab.</p>
+        </div>
+        <div class="col s12" id="editing">
+          <p class="flow-text indigo-text text-darken-4" >EDITING</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nesciunt accusamus ab.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nesciunt accusamus ab.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- parallax -->
 
@@ -128,6 +160,7 @@
     $('.sidenav').sidenav();
     $('.materialboxed').materialbox();
     $('.parallax').parallax();
+    $('.tabs').tabs();
     });
   </script>
 </body>
