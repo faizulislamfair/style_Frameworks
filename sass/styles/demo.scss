@@ -1,0 +1,70 @@
+/* color variable declarations */
+
+$header-bgcolor : #ffab73;
+$main-bgcolor : #ffd384;
+$footer-bgcolor : #ffaec0;
+
+
+$para-fontsize: 15px;
+
+
+
+/* browser reset code */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: $header-bgcolor;
+}
+
+
+// nav styling
+
+/*  nesting  */
+
+nav{
+    margin-top: 15px;
+    ul{
+        list-style-type: none;
+        li{
+            display: inline-block;
+            margin: 0 15px;
+
+            a{
+                display: inline-block;  
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+                transition: .4s;
+                border-radius: 5px;
+              }
+
+              a:hover{
+                background: #000;
+              }
+         }
+    }
+}
+
+
+
+
+
+main{
+    background: $main-bgcolor;
+}
+
+
+#about p{
+    font-size: $para-fontsize;
+}
+
+
+footer{
+    background: $footer-bgcolor;
+}
+

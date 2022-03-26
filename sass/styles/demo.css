@@ -1,0 +1,53 @@
+/* color variable declarations */
+/* browser reset code */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background: #ffab73;
+}
+
+/*  nesting  */
+nav {
+  margin-top: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background: #000;
+}
+
+main {
+  background: #ffd384;
+}
+
+#about p {
+  font-size: 15px;
+}
+
+footer {
+  background: #ffaec0;
+}
+/*# sourceMappingURL=demo.css.map */
