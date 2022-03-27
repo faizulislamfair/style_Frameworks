@@ -1,4 +1,4 @@
-/* color variable declarations */
+/* Importing files */
 /* browser reset code */
 * {
   margin: 0;
@@ -7,6 +7,7 @@
           box-sizing: border-box;
 }
 
+/* color variable declarations */
 header {
   background: #ffab73;
 }

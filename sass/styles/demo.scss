@@ -1,21 +1,11 @@
-/* color variable declarations */
+/* Importing files */ 
 
-$header-bgcolor : #ffab73;
-$main-bgcolor : #ffd384;
-$footer-bgcolor : #ffaec0;
-
-
-$para-fontsize: 15px;
+@import "reset";
+@import "variables";
 
 
 
-/* browser reset code */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 header{
     background: $header-bgcolor;
