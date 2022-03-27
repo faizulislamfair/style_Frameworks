@@ -5,11 +5,30 @@
 
 
 
-
-
 header{
     background: $header-bgcolor;
 }
+
+
+/* Creating a mixin which means accessing all properties of a definite class or tag */ 
+
+@mixin para-style ($size, $style){
+    font-size: $size;
+    font-weight: 700;
+    text-align: $style;
+    margin: 10px 0;
+}
+
+
+#about p{
+    @include para-style(18px, left);
+}
+
+#education p{
+    @include para-style(16px, justify);
+}
+
+
 
 
 // nav styling
@@ -49,9 +68,9 @@ main{
 }
 
 
-#about p{
-    font-size: $para-fontsize;
-}
+// #about p{
+//     font-size: $para-fontsize;
+// }
 
 
 footer{
