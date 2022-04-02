@@ -4,6 +4,20 @@
 @import "variables";
 
 
+$colors: (
+    color1: red, 
+    color2: green, 
+    color3: blue
+);
+
+
+@each $key, $color in $colors {
+    .#{$color}-text {
+    color: $color;
+    }
+}
+
+
 @mixin setFontSize($value){
    @if $value == small{
        font-size: 12px;

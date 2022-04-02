@@ -8,6 +8,18 @@
 }
 
 /* color variable declarations */
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+.blue-text {
+  color: blue;
+}
+
 header {
   background: #ffab73;
 }
