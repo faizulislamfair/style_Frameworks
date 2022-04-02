@@ -10,6 +10,26 @@ header{
 }
 
 
+.btn{
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-download{
+   @extend .btn;
+   background-color: red;
+}
+
+.learn-more{
+   @extend .btn; 
+   background-color: green;
+}
+
+
+
 /* Creating a mixin which means accessing all properties of a definite class or tag */ 
 
 @mixin para-style ($size, $style){

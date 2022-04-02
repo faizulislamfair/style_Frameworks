@@ -12,6 +12,22 @@ header {
   background: #ffab73;
 }
 
+.btn, .btn-download, .learn-more {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-download {
+  background-color: red;
+}
+
+.learn-more {
+  background-color: green;
+}
+
 /* Creating a mixin which means accessing all properties of a definite class or tag */
 #about p {
   font-size: 18px;
