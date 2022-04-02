@@ -65,6 +65,7 @@ nav ul li a {
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 5px;
+  font-size: 20px;
 }
 
 nav ul li a:hover {
