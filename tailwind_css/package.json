@@ -7,9 +7,9 @@
     "build": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "Fair",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^2.2.17"
   }
 }
