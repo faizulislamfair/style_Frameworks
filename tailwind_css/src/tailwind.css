@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* group utilities */
+
+.btn {
+    @apply px-4 py-1 border rounded-full text-sm
+    font-semibold focus:outline-none focus:ring-2 
+    focus:ring-offset-1 hover:text-white
+    hover:border-transparent 
+    dark:focus:ring-offset-gray-800
+    dark:focus:border-transparent;
+    @apply p-2;
+}
+
+
+.btn-gray {
+    @apply border-gray-200 
+    text-gray-500 
+    hover:bg-gray-600 
+    focus:ring-gray-500 
+    focus:ring-offset-1 
+    dark:text-gray-400 
+}
+ 
+
+.btn-green {
+    @apply border-green-200 
+    text-green-500 
+    hover:bg-green-600 
+    focus:ring-green-500 
+    dark:text-green-400 
+}
