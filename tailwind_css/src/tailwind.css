@@ -1,18 +1,8 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 
-/* @responsive {
-    .bg-gradient-brand{
-        background-image: linear-gradient(blue, green);
-    }
-}*/
-
-
-@screen sm {
-    .bg-gradient-brand{
-        background-image: linear-gradient(blue, green);
-    }
-}
-
+.content-area {
+    height: calc(100vh - theme('spacing.12'));
+  }
