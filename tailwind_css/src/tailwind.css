@@ -1,8 +1,13 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 
-.content-area {
-    height: calc(100vh - theme('spacing.12'));
-  }
+.text-body {
+  font-size: 2rem;
+}
+
+
+input::placeholder {
+  color: gray;
+}
