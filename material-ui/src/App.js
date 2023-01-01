@@ -3,7 +3,6 @@ import { Button, Rating, Typography } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { useEffect, useState } from 'react';
 import Avatar from '@mui/material/Avatar';
-import { flexbox } from '@mui/system';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import IconButton from '@mui/material/IconButton';
@@ -21,6 +20,8 @@ function App() {
   const [submitting, setSubmitting] = useState(false);
   const [value, setValue] = useState(2);
   const label = { inputProps: { 'aria-label': 'Switch demo' } };
+
+  const isActive = true;
 
 
   useEffect(() => {
@@ -114,6 +115,34 @@ function App() {
         <Alert severity="warning">This is a warning alert — check it out!</Alert>
       </div>
 
+
+      <div>
+        <Button variant='contained' sx={[{
+          border: '1px solid crimson',
+          bgcolor: 'goldenrod',
+          marginTop: '25px',
+          padding: '1rem',
+          boxShadow: 5,
+          width: {
+            xs: 100, // theme.breakpoints.up('xs')
+            sm: 200, // theme.breakpoints.up('sm')
+            md: 300, // theme.breakpoints.up('md')
+            lg: 400, // theme.breakpoints.up('lg')
+            xl: 500, // theme.breakpoints.up('xl')
+          },
+
+          '	&.MuiButton-root': {
+            padding: '2rem'
+          }
+        },
+
+        isActive && {
+          bgcolor: 'pink'
+        }
+        ]}>
+          Duckling!
+        </Button>
+      </div>
 
     </div >
   );
