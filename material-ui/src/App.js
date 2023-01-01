@@ -1,9 +1,17 @@
 import './App.css';
-import { Button, Typography } from '@mui/material';
+import { Button, Rating, Typography } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { useEffect, useState } from 'react';
 import Avatar from '@mui/material/Avatar';
 import { flexbox } from '@mui/system';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import IconButton from '@mui/material/IconButton';
+import DeleteIcon from '@mui/icons-material/Delete';
+import TextField from '@mui/material/TextField';
+import Switch from '@mui/material/Switch';
+import Alert from '@mui/material/Alert';
+
 
 
 
@@ -11,6 +19,9 @@ import { flexbox } from '@mui/system';
 function App() {
 
   const [submitting, setSubmitting] = useState(false);
+  const [value, setValue] = useState(2);
+  const label = { inputProps: { 'aria-label': 'Switch demo' } };
+
 
   useEffect(() => {
     const id = setTimeout(() => {
@@ -65,6 +76,42 @@ function App() {
         <Typography>
           Neymar
         </Typography>
+      </div>
+
+
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        gap: '5rem',
+        marginTop: '25px'
+      }}>
+
+        <PinterestIcon color='error' />
+        <InstagramIcon />
+
+      </div>
+
+      <IconButton sx={{ mt: 5 }} aria-label="delete">
+        <DeleteIcon />
+      </IconButton>
+
+      <div>
+        <Rating sx={{ mt: 2, color: 'skyblue' }}
+          name="simple-controlled"
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
+      </div>
+
+      <div>
+        <TextField id="outlined-basic" label="Yoh!" variant="outlined" />
+      </div>
+
+      <div>
+        <Switch {...label} defaultChecked />
+        <Alert severity="warning">This is a warning alert — check it out!</Alert>
       </div>
 
 
